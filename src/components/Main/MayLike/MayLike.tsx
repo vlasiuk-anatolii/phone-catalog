@@ -36,7 +36,7 @@ export const MayLike = () => {
 
   useEffect(() => {
     setforRender(createRandomList(arrayForHandle));
-  }, [arrayForHandle]);
+  }, []);
 
   return (
     <div className="maylike">

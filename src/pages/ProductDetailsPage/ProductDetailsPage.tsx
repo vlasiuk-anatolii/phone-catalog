@@ -12,7 +12,6 @@ import { NotFound } from '../../components/NotFound/NotFound';
 import {
   getFavoritesSelector,
   getSelectedCartSelector,
-  getAllProducts,
   getError,
 } from '../../store/selectors';
 
@@ -27,7 +26,11 @@ import { MayLike } from '../../components/Main/MayLike/MayLike';
 import { getDetails } from '../../api/api';
 
 export const ProductDetailsPage = () => {
-  const allProducts = useSelector(getAllProducts);
+  let localStorageAllProducts: Product[] = [];
+  const getAllProducts: string | null = localStorage.getItem('allProducts');
+  if (getAllProducts) {
+    localStorageAllProducts = JSON.parse(getAllProducts);
+  }
   const errorMsg = useSelector(getError);
   const { id } = useParams<{ id: string }>();
   const [
@@ -43,7 +46,7 @@ export const ProductDetailsPage = () => {
   const currentFavorite = useSelector(getFavoritesSelector);
   const currentSelectedCart = useSelector(getSelectedCartSelector);
   let currentPrice = 0;
-  const currentProduct = allProducts.find(item => item.id === id);
+  const currentProduct = localStorageAllProducts.find(item => item.id === id);
 
   if (currentProduct) {
     currentPrice = currentProduct.price
