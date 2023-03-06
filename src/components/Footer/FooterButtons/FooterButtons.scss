@@ -1,0 +1,48 @@
+.foobuttons {
+  margin: auto;
+
+  &__menu {
+    display:none;
+    height: 100%;
+    margin-left: 57px;
+    padding: 0;
+    @media (min-width: 768px) {
+      display: flex;
+    }
+    &--mobile {
+      display:flex;
+      flex-direction: column;
+    }
+  }
+
+  &__menu-item {
+    list-style: none;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    @media (min-width: 768px) {
+      margin: 0;
+    }
+  }
+
+  &__link {
+    font-family: "Mont-Bold", sans-serif;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    text-decoration: none;
+    color: #89939a;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 11px;
+    letter-spacing: 0.04em;
+    margin-right: 27px;
+    @media (min-width: 900px) {
+      margin-right: 57px;
+    }
+  }
+
+  &__link:hover {
+    color: #313237;
+  }
+}

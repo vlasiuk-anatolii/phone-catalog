@@ -1,58 +1,30 @@
-import React from 'react';
-import logo from './logo.svg';
-import { Counter } from './features/counter/Counter';
-import './App.css';
+import './App.scss';
+import { Routes, Route } from 'react-router-dom';
+import CartPage from './pages/CartPage/CartPage';
+// import { Header } from './components/Header/Header';
+import { HomePage } from './pages/HomePage/HomePage';
+import { PhonesPage } from './pages/PhonesPage/PhonesPage';
+import { TabletsPage } from './pages/TabletsPage/TabletsPage';
+import { AccessoriesPage } from './pages/AccessoriesPage/AccessoriesPage';
+import {
+  ProductDetailsPage,
+} from './pages/ProductDetailsPage/ProductDetailsPage';
+import { FavoritesPage } from './pages/FavoritesPage/FavoritesPage';
+import { NotFoundPage } from './pages/NotFoundPage/NotFoundPage';
 
-function App() {
+export const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <Counter />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <span>
-          <span>Learn </span>
-          <a
-            className="App-link"
-            href="https://reactjs.org/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            React
-          </a>
-          <span>, </span>
-          <a
-            className="App-link"
-            href="https://redux.js.org/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Redux
-          </a>
-          <span>, </span>
-          <a
-            className="App-link"
-            href="https://redux-toolkit.js.org/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Redux Toolkit
-          </a>
-          ,<span> and </span>
-          <a
-            className="App-link"
-            href="https://react-redux.js.org/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            React Redux
-          </a>
-        </span>
-      </header>
+    <div className="app">
+      <Routes>
+        <Route path="/" element={(<HomePage />)} />
+        <Route path="/phones" element={<PhonesPage />} />
+        <Route path="/tablets" element={<TabletsPage />} />
+        <Route path="/accessories" element={<AccessoriesPage />} />
+        <Route path="/cart" element={<CartPage />} />
+        <Route path="/favorites" element={<FavoritesPage />} />
+        <Route path="/product/:id" element={<ProductDetailsPage />} />
+        <Route path="*" element={<NotFoundPage />} />
+      </Routes>
     </div>
   );
-}
-
-export default App;
+};

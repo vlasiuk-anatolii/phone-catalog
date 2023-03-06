@@ -1,0 +1,10 @@
+@import 'var.scss';
+* {
+  margin: 0;
+}
+
+.app {
+  margin: 0 auto;
+  max-width: $max-width;
+  height: 64px;
+}

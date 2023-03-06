@@ -1,0 +1,32 @@
+{
+  "files": {
+    "main.css": "./static/css/main.71db2c25.css",
+    "main.js": "./static/js/main.e114f4a5.js",
+    "static/media/tablets.jpg": "./static/media/tablets.46086f4b34f430e75ceb.jpg",
+    "static/media/accessories.jpg": "./static/media/accessories.8398cebe33d38ddf8d68.jpg",
+    "static/media/phones.jpg": "./static/media/phones.f40b75d4046bd9bff102.jpg",
+    "static/media/bag.svg": "./static/media/bag.1962e42406793fa66f0d.svg",
+    "static/media/heart_def_hover.svg": "./static/media/heart_def_hover.2bf6be880a178d638670.svg",
+    "static/media/LOGO.svg": "./static/media/LOGO.13ce922e1b9e8d8894f4.svg",
+    "static/media/home.svg": "./static/media/home.e110292ae2cf67d0baca.svg",
+    "index.html": "./index.html",
+    "static/media/search.svg": "./static/media/search.eb670dd9ac01a47e6e00.svg",
+    "static/media/heart_red_selected.svg": "./static/media/heart_red_selected.d554a185325e4fb06092.svg",
+    "static/media/cross.svg": "./static/media/cross.3ea864f59fecb8596c4b.svg",
+    "static/media/cross_grey.svg": "./static/media/cross_grey.d99189a57063cb02e093.svg",
+    "static/media/plus.svg": "./static/media/plus.dea157243cc9d361ac05.svg",
+    "static/media/arrow_right.svg": "./static/media/arrow_right.a8e610bffe367dcab128.svg",
+    "static/media/arrow_left_grey.svg": "./static/media/arrow_left_grey.98ff905da9db98653d9f.svg",
+    "static/media/arrow_left.svg": "./static/media/arrow_left.74ad2c5e6f257a5f3a97.svg",
+    "static/media/arrow_top.svg": "./static/media/arrow_top.3ffcd791e50e94d29e18.svg",
+    "static/media/minus.svg": "./static/media/minus.cecb4be39afa7b933ec1.svg",
+    "static/media/rectangle_def.svg": "./static/media/rectangle_def.fda93960e3849777ccc7.svg",
+    "static/media/rectangle_hover.svg": "./static/media/rectangle_hover.dfdab0db14332daab511.svg",
+    "main.71db2c25.css.map": "./static/css/main.71db2c25.css.map",
+    "main.e114f4a5.js.map": "./static/js/main.e114f4a5.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.71db2c25.css",
+    "static/js/main.e114f4a5.js"
+  ]
+}
